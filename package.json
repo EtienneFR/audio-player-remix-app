@@ -5,9 +5,8 @@
   "license": "",
   "scripts": {
     "build": "remix build",
-    "dev": "remix dev",
+    "dev": "remix watch",
     "postinstall": "remix setup node",
-    "start": "remix-serve build",
     "dev:netlify": "cross-env NODE_ENV=development netlify dev"
   },
   "dependencies": {
@@ -15,13 +14,15 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "remix": "^1.0.4",
-    "@remix-run/serve": "^1.0.4"
+    "@netlify/functions": "^0.7.2",
+    "@remix-run/netlify": "^1.0.4"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.0.4",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
-    "typescript": "^4.1.2"
+    "typescript": "^4.1.2",
+    "cross-env": "^7.0.3"
   },
   "engines": {
     "node": ">=14"
