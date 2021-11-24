@@ -12,7 +12,7 @@ import {
 } from "remix";
 import type { LinksFunction } from "remix";
 
-import deleteMeRemixStyles from "~/styles/demos/remix.css";
+import remixStyles from "~/styles/remix/remix.css";
 import globalStylesUrl from "~/styles/global.css";
 import darkStylesUrl from "~/styles/dark.css";
 
@@ -32,7 +32,7 @@ export let links: LinksFunction = () => {
       href: darkStylesUrl,
       media: "(prefers-color-scheme: dark)"
     },
-    { rel: "stylesheet", href: deleteMeRemixStyles }
+    { rel: "stylesheet", href: remixStyles }
   ];
 };
 
