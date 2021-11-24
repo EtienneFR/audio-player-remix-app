@@ -27,6 +27,7 @@
   width: 50%;
   height: 50%;
   color: var(--color-foreground);
+  align-items: center;
 }
 
 .remix-app__header-nav ul {
@@ -65,4 +66,12 @@
   gap: var(--gap);
   padding-top: var(--space);
   padding-bottom: var(--space);
+}
+
+.remix-app_header-left-logo {
+  margin-right: 10px;
+}
+
+.remix-app_header-right-logo {
+  margin-left: 10px;
 }
