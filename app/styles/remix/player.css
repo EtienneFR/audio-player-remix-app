@@ -1,0 +1,106 @@
+@keyframes spin {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+  .player {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'time' 'controls';
+    width: max-content;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    background-color: #fefefe;
+    color: #111;
+  }
+  
+  .play {
+    background-image: url(/icons/play.svg);
+  }
+  
+  .pause {
+    background-image: url(/icons/pause.svg);
+  }
+  
+  .skip {
+    background-image: url(/icons/step-forward.svg);
+  }
+  
+  .loading {
+    background-image: url(/icons/spinner.svg);
+    background-color: transparent;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  .volume {
+    background-image: url(/icons/volume.svg);
+  }
+  .volume[data-level='high'] {
+    background-image: url(/icons/volume-up.svg);
+  }
+  
+  .volume[data-level='low'] {
+    background-image: url(/icons/volume-down.svg);
+  }
+  
+  .volume[data-level='zero'] {
+    background-image: url(/icons/volume-off.svg);
+  }
+  
+  .volume[data-status='muted'] {
+    background-image: url(/icons/volume-mute.svg);
+  }
+  
+  button {
+    appearance: none;
+    border: none;
+    height: 4vw;
+    width: 4vw;
+    background-size: 70%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .song {
+    display: grid;
+    grid-template-rows: auto auto 3rem;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      'title title'
+      'artist artist'
+      'scrubber elapsed';
+  }
+  
+  .song > .title {
+    font-size: 120%;
+    font-weight: bold;
+    grid-area: title;
+  }
+  
+  .song > .artist {
+    grid-area: artist;
+  }
+  
+  .song > #scrubber {
+    grid-area: scrubber;
+  }
+  
+  .song > #elapsed {
+    grid-area: elapsed;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3vw;
+    column-gap: 3vw;
+  }

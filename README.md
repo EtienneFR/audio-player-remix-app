@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29429f41-2e5a-4482-8774-68611fb66fdf/deploy-status)](https://app.netlify.com/sites/audio-player-remix-app/deploys)
+
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
@@ -43,7 +46,7 @@ $ npm run dev:netlify
 $ npm run dev
 ```
 
-Open up [http://localhost:3000](http://localhost:3000), and you should be ready to go!
+Open up [http://localhost:3033](http://localhost:3033), and you should be ready to go!
 
 If you'd rather run everything in a single tab, you can look at [concurrently](https://npm.im/concurrently) or similar tools to run both processes in one tab.
 
